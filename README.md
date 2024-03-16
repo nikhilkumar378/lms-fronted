@@ -16,6 +16,31 @@ cd lms-frontend
 npm i
 ,,,
 
+4.  run the server
+
+npm run dev
+
+#Setup tailwind css
+
+1.  ,,,
+    npm install -D tailwindcss
+    ,,,
+
+2.  ,,,
+    npx tailwindcss init
+    ,,,
+
+3.  ,,,
+    in index.js put this
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ,,,
+
 4.
 
-run the server
+,,,
+put this in content
+
+"./src/\*_/_.{html,js}"
+,,,

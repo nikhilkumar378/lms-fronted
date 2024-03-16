@@ -1,49 +1,59 @@
 ### ms-frontend
 
-#set-up instructions
+### set-up instructions
 
 1. clone the project
+
    ,,,
+
    git clone https://github.com/nikhilkumar378/lms-fronted.git
    ,,,
 
 2. Move into the directiory
+
    ,,,
+
    cd lms-frontend
    ,,,
 
 3. install dependencies
+
    ,,,
+
    npm i
    ,,,
 
-4. run the server
+4. Run the server
+
    ,,,
+
    npm run dev
    ,,,
 
 ### Setup tailwind css
 
 1.  ,,,
+
     npm install -D tailwindcss
     ,,,
 
 2.  ,,,
+
     npx tailwindcss init
     ,,,
 
 3.  Add the tailwind directives at the top of 'index.js' file
 
-,,,  
- @tailwind base;
+,,,
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 ,,,
 
-4.
+4. Put this in content
 
 ,,,
-put this in content
 
 "./src/\*_/_.{html,js}"
 ,,,

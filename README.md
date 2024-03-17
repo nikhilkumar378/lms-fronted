@@ -58,6 +58,13 @@
 "./src/\*_/_.{html,js}"
 ```
 
+5. Put this in tailwindconfig file plugins
+
+```
+
+require("daisyui"), require("@tailwindcss/line-clamp")
+```
+
 ### Adding plugins and dependencies
 
 ```

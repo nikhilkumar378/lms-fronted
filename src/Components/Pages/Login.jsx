@@ -33,7 +33,7 @@ function Login() {
     event.preventDefault();
     
 
-    if (!logindata.email || !logindata.password){
+    if(!logindata.email || !logindata.password){
 
       toast.error("Please fill all the details")
        return;

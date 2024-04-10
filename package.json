@@ -15,7 +15,6 @@
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
     "daisyui": "^4.7.3",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",

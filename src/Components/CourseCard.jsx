@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
   return(
 
     <div
-    onClick={() => navigate("/courses/description/")}
+    onClick={() => navigate("/courses/description/", {state: {...data}})}
 
     className="text-white w-[22rem] h-[430px] shadow-lg rounded-lg cursor-pointer group overflow-hidden bg-zinc-500">
 

@@ -11,6 +11,7 @@ import SignUp from "./Components/Pages/SignUp";
 import CourseList from "./Components/Pages/Course/CourseList";
 import Contact from "./Components/Pages/Contact";
 import Denied from "./Components/Pages/Denied";
+import CourseDescription from "./Components/Pages/Course/CourseDescription";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/Courses" element={<CourseList/>}></Route>
         <Route path="contact" element={<Contact/>}></Route>
-        <Route path="denied" element={<Denied/>}></Route>
+        <Route path="/denied" element={<Denied/>}></Route>
+        <Route path="/course/description" element={<CourseDescription/>}></Route>
       </Routes>
 
       

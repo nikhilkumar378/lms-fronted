@@ -6,6 +6,7 @@ import {Link, useNavigate } from "react-router-dom";
 
 import HomeLayout from "../../Layouts/HomeLayouts";
 import { createAccount } from "../../Redux/Slices/AuthSlice";
+import { isValidpassword, isemail } from "../../Helpers/regexMtcher";
 
 function SignUp() {
   const dispatch = useDispatch();
@@ -69,13 +70,17 @@ function SignUp() {
     }
 
     if (
-      !signupdata.email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
+      !isemail(signupdata.email)
     ) {
       toast.error("Invalid email");
       return;
     }
 
-    if (signupdata.password.match(/^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/)) {
+    // if (signupdata.password.match(/^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/)) {
+    //   toast.error("Invalid Password");
+    // }
+
+    if (!isValidpassword(signupdata.password) ){
       toast.error("Invalid Password");
     }
 
